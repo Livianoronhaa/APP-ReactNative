@@ -8,7 +8,7 @@ import {
   StyleSheet,
   KeyboardAvoidingView,
   Platform,
-  Image, // Importe o componente Image
+  Image,
 } from 'react-native';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebaseConfig';
@@ -34,7 +34,6 @@ export default function LoginScreen({ navigation }) {
       style={styles.container}
     >
       <View style={styles.innerContainer}>
-        {/* Adicione o logo aqui */}
         <Image source={logo} style={styles.logo} resizeMode="contain" />
 
         <Text style={styles.title}>Bem-vindo de volta!</Text>

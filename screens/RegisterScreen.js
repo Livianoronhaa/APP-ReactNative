@@ -13,7 +13,6 @@ import {
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebaseConfig';
 
-// Adicione esta linha - ajuste o caminho conforme necessário
 const logo = require('../assets/logotipo.png');
 
 export default function RegisterScreen({ navigation }) {
@@ -36,7 +35,6 @@ export default function RegisterScreen({ navigation }) {
       style={styles.container}
     >
       <View style={styles.innerContainer}>
-        {/* Adicione a Image aqui */}
         <Image source={logo} style={styles.logo} resizeMode="contain" />
 
         <Text style={styles.title}>Crie sua conta</Text>
